@@ -1,0 +1,27 @@
+<DOCTYPE>
+<html>
+<HEAD>
+<meta charset="utf-8" />
+</HEAD>
+<body>
+<form onsubmit="return checkForm(this)" action="PHP\proc_select.php" method="GET">
+<input id="1" type="submit" value="SELECT" name="de">
+</form>
+
+<form onsubmit="return checkForm(this)" action="PHP\proc_delete.php" method="GET">
+<input id="2" type="submit" value="DELETE" name="de"> 
+<input id="3" type="text" size="3" value="" name="textid" placeholder="Введите ID"> <br>
+</form>
+
+<form onsubmit="return checkForm(this)" action="PHP\proc_update.php" method="GET">
+<input id="4" type="submit" value="UPDATE" name="de">
+<input id="5" type="text" size="3" value="" name="updateid" placeholder="Введите ID">
+<input id="6" type="text" size="5" value="" name="updatename" placeholder="Введите Имя"> 
+</form>
+
+<form onsubmit="return checkForm(this)" action="PHP\proc_insert.php" method="GET">
+<input id="7" type="submit" value="INSERT" name="de">
+<input id="8" type="text" size="5" value="" name="insertname" placeholder="Введите Имя"> 
+</form>
+
+</html>
